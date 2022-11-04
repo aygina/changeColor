@@ -18,10 +18,11 @@
     <div class="wrapper">
         <h1>Это мой вебсайт</h1>
         <label for="theme">Выберите тему</label>
-        <select id="theme">
-            <option>Светлая</option>
-            <option>Тёмная</option>
-            <option>Волшебная</option>
+        <select id="theme" onchange="changeColor(this)">
+            <option id="empty" value="empty"></option>
+            <option id="day" value="day">Светлая</option>
+            <option id="night" value="night">Тёмная</option>
+            <option id="magic" value="magic">Волшебная</option>
         </select>
     </div>
     <script src="index.js"></script>
